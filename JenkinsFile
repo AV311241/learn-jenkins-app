@@ -4,6 +4,7 @@ pipeline {
         stage("build"){
             echo "hello jenkins "
             echo "i am abhishek"
+            echo "i am abhishek"
         } 
     }
 }
