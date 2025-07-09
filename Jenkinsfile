@@ -9,10 +9,13 @@ pipeline {
                 }
             }
             steps{
-                echo "hello jenkins "
-                echo "i am abhishek"
-                echo "i am abhishek"
-
+                sh '''
+                    node --version
+                    npm --version
+                    npm ci
+                    npm run build
+                
+                '''
             }
         } 
     }
